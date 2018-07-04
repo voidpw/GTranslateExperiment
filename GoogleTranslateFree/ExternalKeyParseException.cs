@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace GoogleTranslateFree
 {
-    public class Class1
+    class ExternalKeyParseException : Exception
     {
+        public ExternalKeyParseException()
+            : base("External key parse failed") { }
     }
 }
